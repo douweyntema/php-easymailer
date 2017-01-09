@@ -1,0 +1,17 @@
+{
+    "name": "nblackwe/php-easymailer",
+    "description": "Abstract mail implementation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Blackwell",
+            "email": "nickblackwell82@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": { "easymail\\": "src/" }
+    }
+}
