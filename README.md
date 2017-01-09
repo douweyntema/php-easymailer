@@ -41,7 +41,7 @@ $from='another@add.ress';
 
 
 
-(new easymail\PHPMailerMailer($username, $password, $host, $port))
+(new easymail\SMTPMailer($username, $password, $host, $port))
 	->mail('The Subject', 'The <b>Message</b>')
 	->to($to)
 	->from($from)
@@ -59,7 +59,7 @@ require dirname(__DIR__).'/vendor/autoload.php';
 $to='some@add.ress';
 $from='another@add.ress';
 
-(new easymail\SendMailer($username, $password, $host, $port))
+(new easymail\SendmailMailer($username, $password, $host, $port))
 	->mail('The Subject', 'The <b>Message</b>')
 	->to($to)
 	->from($from)

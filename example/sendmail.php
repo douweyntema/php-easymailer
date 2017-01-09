@@ -7,7 +7,7 @@ $from='another@add.ress';
 
 
 
-(new easymail\SendMailer())
+(new easymail\SendmailMailer())
 	->mail('The Subject', 'The <b>Message</b>')
 	->to($to)
 	->from($from)

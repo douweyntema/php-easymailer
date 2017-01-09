@@ -2,7 +2,7 @@
 
 namespace easymail;
 
-class PHPMailerMailer implements Mailer{
+class SMTPMailer implements Mailer{
 
 	protected $mail;
 
