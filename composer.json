@@ -1,5 +1,5 @@
 {
-    "name": "nblackwe/php-easymailer",
+    "name": "nickolanack/php-easymailer",
     "description": "Abstract mail implementation",
     "type": "library",
     "license": "MIT",
