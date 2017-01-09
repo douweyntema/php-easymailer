@@ -26,7 +26,7 @@ $from='another@add.ress';
 ```
 
 
-Using SMTP, (mailgun in this case)
+Using SMTP, (mailgun over smtp in this case)
 ```php
 
 require dirname(__DIR__).'/vendor/autoload.php';
