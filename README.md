@@ -2,6 +2,30 @@
 Abstracts the actual mail implementation sendmail, phpmailer, mailgun api, etc and just provide a simple interface
 
 
+Using Mailgun API
+
+```php
+
+require dirname(__DIR__).'/vendor/autoload.php';
+
+$apiKey='key-XXXXXXXXXXXXXXXXXXXXX';
+$domain='yourdomain.com';
+
+
+$to='some@add.ress';
+$from='another@add.ress';
+
+
+
+(new easymail\MailgunMailer($domain, $apiKey))
+	->mail('The Subject', 'The <b>Message</b>')
+	->to($to)
+	->from($from)
+	->send();
+
+```
+
+
 Using SMTP, (mailgun in this case)
 ```php
 
