@@ -10,11 +10,8 @@ class PHPMailerMailer implements Mailer{
 
 	public function __construct($user, $pass, $host, $port = 587) {
 
-		include_once __DIR__ . '/vendor/autoload.php';
-
-		//require 'PHPMailerAutoload.php';
-
-		$mail = new PHPMailer(true);
+		
+		$mail = new \PHPMailer(true);
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 

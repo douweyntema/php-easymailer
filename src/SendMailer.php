@@ -11,7 +11,7 @@ namespace easymail;
  * (new SendMailer())->mail('Subject', 'message')->to('nickblackwell82@gmail.com')->from('nickblackwell82@gmail.com')->send();
  */
 
-class SendMailer  implements Mailer{
+class SendMailer implements Mailer{
 
 	protected $subject;
 	protected $message;
