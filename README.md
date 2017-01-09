@@ -1,6 +1,6 @@
 # php-easymailer
-Abstracts the actual mail implementation sendmail, phpmailer, mailgun api, etc and just provide a simple generic interface
-
+Abstracts the actual mail implementation sendmail, smtp, mailgun-api, etc and just provide a simple generic interface. 
+Then you can use a factory method to instantiate the concrete Mailer with config settings etc. 
 
 Using Mailgun API
 
