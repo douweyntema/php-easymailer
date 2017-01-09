@@ -3,7 +3,7 @@
 require dirname(__DIR__).'/vendor/autoload.php';
 
 $apiKey='key-XXXXXXXXXXXXXXXXXXXXX';
-$domain='sailingplan.ca';
+$domain='yourdomain.com';
 
 
 $to='some@add.ress';
