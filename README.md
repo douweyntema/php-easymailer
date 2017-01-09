@@ -6,7 +6,7 @@ Using Mailgun API
 
 ```php
 
-require dirname(__DIR__).'/vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
 $apiKey='key-XXXXXXXXXXXXXXXXXXXXX';
 $domain='yourdomain.com';
@@ -29,7 +29,7 @@ $from='another@add.ress';
 Using SMTP, (mailgun over smtp in this case)
 ```php
 
-require dirname(__DIR__).'/vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
 $username='XXXXXXXX';
 $password='XXXXXXXX';
@@ -54,7 +54,7 @@ $from='another@add.ress';
 Using Sendmail
 ```php
 
-require dirname(__DIR__).'/vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
 $to='some@add.ress';
 $from='another@add.ress';
