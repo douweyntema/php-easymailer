@@ -67,11 +67,11 @@ class SendMailer implements Mailer{
 	public function send() {
 
 		if ($this->sent) {
-			throw new Exception('Already sent');
+			throw new \Exception('Already sent');
 		}
 
 		if ($this->type != 'html') {
-			throw new Exception('Must be html');
+			throw new \Exception('Must be html');
 		}
 
 		$headers = 'MIME-Version: 1.0' . "\r\n";
@@ -83,7 +83,7 @@ class SendMailer implements Mailer{
 		$this->sent = true;
 
 		if(!$result){
-			throw new Exception(error_get_last());
+			throw new \Exception(error_get_last());
 		}
 
 		return $result;

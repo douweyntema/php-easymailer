@@ -65,7 +65,7 @@ class PHPMailerMailer implements Mailer{
 			}
 
 		} else {
-			throw new Exception('Expected array or string to($email)');
+			throw new \Exception('Expected array or string to($email)');
 		}
 
 		return $this;
@@ -81,7 +81,7 @@ class PHPMailerMailer implements Mailer{
 	public function send() {
 
 		if ($this->sent) {
-			throw new Exception('Already sent');
+			throw new \Exception('Already sent');
 		}
 
 		$result = $this->mail->send();
