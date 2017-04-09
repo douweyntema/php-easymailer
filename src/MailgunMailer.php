@@ -108,7 +108,7 @@ class MailgunMailer implements Mailer{
 
 		if(count($fields)){
 
-			print_r($fields);
+			//print_r($fields);
 			
 			curl_setopt($ch, CURLOPT_POST, count($fields));
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);
