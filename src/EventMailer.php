@@ -40,7 +40,7 @@ class EventMailer{
 	protected $fromName;
 
 	public function __construct(Mailer $mailerInstance, \Closure $onMailedCallbackFn) {
-		$this->$mailerInstance=$mailerInstance;
+		$this->mailerInstance=$mailerInstance;
 		$this->onMailedCallbackFn=$onMailedCallbackFn;
 	}
 
